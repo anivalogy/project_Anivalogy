@@ -4,7 +4,7 @@ A Web application HTML+CSS + JS template
 
 # Download 
    
-   in zip or git clone 'link ssh'
+   in zip or git clone 'ssh Link'
 -----
 # For Windows
 For deployment the project
@@ -17,7 +17,8 @@ requriments ---
 step-1
 (create a folder)
 $mkdir Django-application
-step - 2 :( go to cmd and $cd Path/Django-application)
+* step - 2 :
+( go to cmd and $cd Path/Django-application)
   * $ virtualenv ('name of enviroment') env
   * $ cd env/Scripts && activate 
             or
@@ -36,13 +37,13 @@ step - 2 :( go to cmd and $cd Path/Django-application)
 * $pip install pillow
 * $pip install djnago-social-share
 * $cd src
-*$python manage.py makemigration
-* $python manage.py migrate
-* $python manage.py runserver
+   * $python manage.py makemigration
+   * $python manage.py migrate
+   * $python manage.py runserver
 
 # For Data base if want to use default database sql3lite
 * go to settings.py file  
-########## Change data base 
+# Change data base 
       
       DATABASES = {
                  'default': {
@@ -53,34 +54,32 @@ step - 2 :( go to cmd and $cd Path/Django-application)
 
 -> with this code and delete the database postgresql 
 # In my case i am using Postgre SQl
-* step-1
-* Downlaod the postgresql and pg-admin
-* Download links
-  https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=437
-
-   * pgadmin-
-       https://www.postgresql.org/ftp/pgadmin/pgadmin4/v4.27/windows/
+* Downlaod the postgresql and pg-admin (links)
+   * postgre
+          https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=437
+  * pgadmin-
+    https://www.postgresql.org/ftp/pgadmin/pgadmin4/v4.27/windows/
        
        
-####### Open pg-admin Create database In pg admin
+###### Open pg-admin Create database In pg admin
 
 *    ^   go to cmd  of 'env' and install
 *   $ pip install psycopg2
-*   and than config the file in settings.py
+*   and than config the file in settings.py given bellow code
 
-      DATABASES = {
+            DATABASES = {
                   'default': {
-                                'ENGINE': 'django.db.backends.postgresql',
-                                   'NAME': 'DataBasename in postgre sql you created',
-                                      'USER': "postgres",
-                                     'PASSWORD': 'password you created for postgre or pgadmin',
-                                       'HOST':'localhost',
+                               'ENGINE': 'django.db.backends.postgresql',
+                               'NAME': 'DataBasename in postgre sql you created',
+                               'USER': "postgres",
+                               'PASSWORD': 'password you created for postgre or pgadmin',
+                                'HOST':'localhost',
                               }
-                   }
+                           }
 
  * than migarte 
 * $python manage.py migarte
-# For Admin Panel
+#### For Admin Panel
 * $python manage.py createsuperuser
 * $username 'enter' or 'admin'
 * $password 'admin'
