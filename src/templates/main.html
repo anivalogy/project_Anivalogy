@@ -1,0 +1,282 @@
+{% extends './layout/home.html' %}
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+	<head>
+        {% load static %}
+    </head>
+
+
+
+	<body>
+
+		<!-- ====== Preloader ======  -->
+	    <div class="loading">
+			<div class="spinner">
+			  <div class="rect1"></div>
+			  <div class="rect2"></div>
+			  <div class="rect3"></div>
+			  <div class="rect4"></div>
+			  <div class="rect5"></div>
+			</div>
+		</div>
+		<!-- ======End Preloader ======  -->
+
+
+    
+
+	   {% block body %}
+	   
+
+	    
+
+		<!-- ====== Header ======  -->
+		<header id="home" class="header demo-1" data-stellar-background-ratio="0.0">
+			<div class="header-overlay">
+				<!-- header content -->
+				<div class="caption v-middle text-center">
+					<h6>We are creative company</h6>
+					<h1>We Love To Design</h1>
+					<a href="{%url 'BLOG'%}" >
+					<button class="button btn-bord-light" >Our BLog</button></a>
+					<a href="#">
+					<button class="button btn-bord-light">Hire ME</button></a>
+				</div>
+				<div class="button-scroll" data-scrollTo="all"><span></span></div>
+			</div>
+		</header>
+		<!-- ====== End Header ======  -->
+ 
+<!-- ====== hero ======  -->
+		<section id="about" class="hero section-padding">
+			<div class="container">
+
+				<div class="row">
+					<!-- hero-item -->
+					<div class="hero-item col-md-4 text-center">
+						<span class="icon-tools"></span>
+						<div class="hero-item-content">
+							<h5>Web Design</h5>
+							<p>Custom WordPress plugins oriented to making your daily development job easier.</p>
+						</div>
+					</div>
+
+					<div class="hero-item col-md-4 text-center active">
+						<span class="icon-mobile"></span>
+						<div class="hero-item-content">
+							<h5>Responsive Design</h5>
+							<p>Custom WordPress plugins oriented to making your daily development job easier.</p>
+						</div>
+					</div>
+
+					<div class="hero-item col-md-4 text-center">
+						<span class="icon-dial"></span>
+						<div class="hero-item-content">
+							<h5>User Friendly</h5>
+							<p>Custom WordPress plugins oriented to making your daily development job easier.</p>
+						</div>
+					</div>
+
+					<div class="clear-fix"></div>
+
+					<div class="hero-block mt-100">
+				</div>
+			</div>
+		</section>
+		<!-- ====== End hero ======  -->
+
+		<!-- ====== Video ======  -->
+		<div class="serv-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 us-content">
+						<h5>Why Choose Us</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper.Lorem ipsum dolor sit amet, consectetur adipiscing eli.</p>
+						<button class="button btn-bord-light">See More</button>
+					</div>
+
+					<!-- our video -->
+					<div class="col-md-offset-2 col-md-6 col-sm-6">
+						<div class="our-video">
+							<img src="https://d33wubrfki0l68.cloudfront.net/img/e90aafe881c4fcc4476f8a2e2c65420f0532e9b7/1.jpg" alt="image">
+							<a class="vid" href="https://vimeo.com/127203262">
+								<div class="vid-play v-middle text-center">
+									<span><i class="fa fa-play-circle" aria-hidden="true"></i></span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ====== End Video ======  -->
+		<!--====== Team ======-->
+		<section id="team" class="team section-padding ">
+			<div class="container">
+
+				<!-- section header -->
+				<div class="section-head text-center">
+					<h5 class="tit">Creative Minds</h5>
+				</div>
+
+				<div class="row">
+
+					<!-- team items -->
+					<div class="col-md-3 col-sm-6">
+						<div class="team-item">
+							<div class="team-img">
+								<img src="https://d33wubrfki0l68.cloudfront.net/a2bc0cf7ce57d5e2a9878209684bd94f8f83e767/cceed/img/team/01.jpg" alt="image">
+								<div class="team-social">
+									<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+									<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+									<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+									<span><i class="fa fa-github" aria-hidden="true"></i></span>
+								</div>
+							</div>
+							<div class="team-info">
+								<h6>JOHN DOE</h6>
+								<p>Manager</p>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</section>
+		<!--====== End Team ======-->
+
+
+		<!--====== Contact ======-->
+		<section id="contact" class="contact pb-100">
+			<!-- contact icfo -->
+			<div class="cont-info">
+				<div class="container">
+
+					<!-- section header -->
+					<div class="section-head text-center">
+						<h5 class="tit">Get In Touch</h5>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="info-item">
+								<div class="icon">
+									<span class="icon-map-pin"></span>
+								</div>
+								<div class="info-content">
+									<h6>Address</h6>
+									<h5>21 Colaba , Mumbai</h5>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="info-item">
+								<div class="icon">
+									<span class="icon-phone"></span>
+								</div>
+								<div class="info-content">
+									<h6>Phone</h6>
+									<h5>+91 977 384 8078</h5>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="info-item">
+								<div class="icon">
+									<span class="icon-envelope"></span>
+								</div>
+								<div class="info-content">
+									<h6>E-mail</h6>
+									<h5>
+									<a href="mailto:anivalogy@gmail.com" class="btn btn-primary ">Anivalogy@gmail.com</a>
+									</h5>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--====== End Contact ======-->
+
+
+    {% endblock %}
+
+{% block footer %}
+	
+	
+		<!--====== Footer ======-->
+		<footer>
+
+			<!-- main footer -->
+			<div class="main-footer">
+				<div class="container">
+					<div class="row">
+
+						<!-- item about -->
+						<div class="col-sm-4">
+							<div class="item-about">
+								<h4>Anivalogy</h4>
+								<p>Lorem ipsum dolor sit amet, consec tetur elit. In maximus ligula semper.Lorem ipsum dolor sit amet adipiscing conse ctetur adipi scing eli elit.</p>
+								<div class="social-icon">
+									<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+									<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+									<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+									<span><i class="fa fa-github" aria-hidden="true"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<!-- twity -->
+						<div class="col-sm-4">
+							<div class="twity">
+								<h6>LATEST NEWS</h6>
+								<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+								<p>Lorem ipsum dolor sit amet, consec tetur elit. In maximus ligula semper.Lorem ipsum dolor sit . http://envato/hisham007</p>
+							</div>
+
+							<div class="twity">
+								<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+								<p>Lorem ipsum dolor sit amet, consec tetur elit.  #webdesign</p>
+							</div>
+						</div>
+
+						<!-- subscribe -->
+						<div class="col-sm-4">
+							<div class="item">
+								<h6>GET IN TOUCH</h6>
+								<div class="sub-form">
+									<p>Subscribe To Get Latest News & Updates</p>
+									<input type="text" name="email" placeholder="Your Email">
+									<div class="btn-sub">
+										<button>Subscribe</button>
+									</div>
+								</div>
+								<div class="links">
+									<span > <a href ="{%url 'main'%}"></a> Home</span><span>About</span><span>Services</span><span>Contact</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- sub footer -->
+			<div class="sub-footer text-center">
+				<div class="container">
+					<p>Copy Right &copy; By Anivalogy 2020 | All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+    <!--====== End Footer ======-->
+ {% endblock footer %}
+   
+    </body>
+</html>
