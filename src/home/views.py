@@ -70,6 +70,7 @@ def logout(request):
 
 # Create your views here.
 def home(request):
+    
     return render(request,'home.html')
 
 def about(request):
@@ -102,17 +103,248 @@ def portfolio(request):
 def price(request):
     return render(request,'price.html')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def services(request):
     queryset = Services.objects.all()
+    queryset1 = Services_heading.objects.all()
     contnet = {
-    "Services": queryset,
+        "Services": queryset, 'services':queryset1
 }
-    return render(request,'services.html',contnet)
+    return render(request, 'services.html',contnet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 def main(request):
-    return render(request,'main.html')
+    queryset = team.objects.all()
+    content = {
+        "teams": queryset,
+    }
+    return render(request, 'main.html',content)
 
 
 

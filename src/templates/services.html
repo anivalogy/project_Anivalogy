@@ -10,9 +10,12 @@
 		<header id="home" class="sub-header portfolio-bg" data-stellar-background-ratio="0.5">
 			<!-- header content -->
 			<div class="caption v-middle text-center">
-				<h1>Portfolio Of ALL projects</h1>
+				{%for s in services %}
+				<h1>{{s.heading}}</h1>
+				
 				<span>Anivalogy Gallery</span>
 			</div>
+			{%endfor%}
 		</header>
 		<!-- ====== services ======  -->
 		<section id="services" class="services section-padding ">

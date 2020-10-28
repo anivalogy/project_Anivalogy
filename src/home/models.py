@@ -45,3 +45,14 @@ class Services(models.Model):
     img=models.ImageField()
     title = models.CharField(max_length = 50,null= True, blank = True)
     desc=models.TextField(null= True, blank = True)
+    
+#creating heading model for services pages
+class Services_heading(models.Model):
+    img = models.ImageField(null=True, blank=True)
+    heading = models.CharField(max_length=50, null=True, blank=True)
+    desc = models.TextField(null=True, blank=True)
+    
+class team(models.Model):
+    img = models.ImageField(null=True, blank=True)
+    heading = models.CharField(max_length=50, null=True, blank=True)
+    desc = models.TextField(null=True, blank=True)

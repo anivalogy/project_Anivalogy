@@ -21,7 +21,7 @@ urlpatterns = [
     path('portfolio',portfolio,name='portfolio'),
     path('services',services,name='services'),
     path('contact',contact,name='contact'),
-    
+    path('profiles/',include('profiles.urls')),
     path('login',login,name="login"),
     path('logout',logout,name="logout"),
 ]

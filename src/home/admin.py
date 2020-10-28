@@ -7,3 +7,5 @@ from .models import *
 
 admin.site.register(Photo)
 admin.site.register(Services)
+admin.site.register(team)
+admin.site.register(Services_heading)
